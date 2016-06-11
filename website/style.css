@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: kingthing;
+	src: url(webfonts/Kingthings_Foundation.ttf);
+}
+@font-face{
+	font-family: caudex;
+	src: url(webfonts/Caudex-Regular.ttf);
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #703030;
+}
+#bckground{
+	width: 1000px;
+	height: 850px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(images/bkc_bois.jpg) no-repeat center center;
+}
+#container{
+	width: 960px;
+	height: 730px;
+	position: relative;
+	top: 50px;
+	left: 2%;
+}
+header{
+	width: 960px;
+	height: 193px;
+	background: url(images/head-01.png) no-repeat center center;
+}
+.logo{
+	width: 125px;
+	height: 125px;
+	margin-top: 4%;
+	margin-left: 7.5%;
+	float: left;
+}
+.logo img:hover{
+    -webkit-animation-name: rotate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+	-webkit-transition-timing-function: ease-in-out;
+	
+	-ms-animation-name: rotate;
+	-ms-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+	-ms-transition-timing-function: ease-in-out;
+	transform: rotate(360deg);
+	
+	-moz-animation-name: rotate;
+	-moz-animation-duration:  1s;
+	-webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+	-moz-transition-timing-function: ease-in-out;
+	transform: rotate(360deg);
+}
+#masthead{
+	width: 322px;
+	height: 57px;
+	float: left;
+	margin-top: 7%;
+	margin-left: 15px;
+	background: url(images/masthead.fw.png) no-repeat center center;
+}
+#landscape{
+	width: 326px;
+	height: 61px;
+	float: left;
+	background: url(images/landscape.fw.png) no-repeat center center;
+	margin-top: 9%;
+}
+#soleil{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: -15px;
+	left: 160px;
+}
+@-moz-keyframes rotate {
+	from{
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes rotate {
+	from{
+		-ms-transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes rotate {
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+#soleil img{
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transition-timing-function: linear;
+	
+	-ms-animation-name: rotate;
+	-ms-animation-duration: 8s;
+	-ms-animation-iteration-count: infinite;
+	-ms-transition-timing-function: linear;
+	
+	-moz-animation-name: rotate;
+	-moz-animation-duration: 8s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transition-timing-function: linear;
+}
+nav{
+	width: 960px;
+	height: 35px;
+	font-family: kingthing;
+}
+nav ul{
+	width: 500px;
+	height: 35px;
+	margin-top: 0px;
+	margin-left: 30px;
+	list-style-type: none;
+	float: left;
+}
+nav ul li{
+	width: 114px;
+	height: 100%;
+	margin-left: 0px;
+	line-height: 35px;
+	float: left;
+	text-align: center;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #FFC;
+	display: block;
+}
+nav ul li a:hover{
+	display: block;
+	color: #FF6;
+}
+.first{
+	margin-left: -113px;
+	float: left;
+	color: #FF6;
+}
+section{
+	width: 960px;
+	height: 408px;
+	font-family: caudex, sans serif;
+	clear: both;
+}
+#art_main{
+	width: 634px;
+	height: 393px;
+	background: url(images/old_paper-01.png) no-repeat center center;
+	float: left;
+}
+#art_aside{
+	width: 317px;
+	height: 393px;
+	float: left;
+}
+.top_aside{
+	width: 100%;
+	height: 50%;
+	background: url(images/old_paper-02-01.fw.png) no-repeat center center;
+}
+.bot_aside{
+	width: 100%;
+	height: 50%;
+	background: url(images/old_paper-03-01.png) no-repeat center center;
+}
+#text_deco1{
+	width:  350px;
+	height: 62px;
+	margin-top: 25px;
+	margin-left: 25px;
+	background: url(images/deco1.fw.png) no-repeat bottom right;
+	float: left;
+}
+#my_photo{
+	margin: 25px;
+	float: left;
+}
+#text_main1{
+	width: 185px;
+	float: left;
+	height: 190px;
+	font-size: 0.75em;
+	margin-left: 45px;
+	margin-top: -20px;
+}
+#text_main2{
+	width: 155px;
+	float: left;
+	height: 190px;
+	font-size: 0.75em;
+	margin-left: 25px;
+	margin-top: -20px;
+}
+#text_main2 img{
+	margin-left: 40px;
+	margin-top: 0px;
+}
+#text_deco2{
+	width: 13px;
+	height: 159px;
+	float: left;
+	margin-left: 95px;
+	margin-top: -15px;
+	background: url(images/deco2.fw.png) no-repeat center center;
+}
+.containt{
+	margin-left: 40px;
+	padding-top: 15px;
+	width: 260px;
+	height: 160px;
+}
+.containt img{
+	display: block;
+	margin-top: 10px;
+}
+.containt p{
+	font-size: 0.75em;
+}
+footer{
+	width: 927px;
+	height: 61px;
+	margin-top: 25px;
+	padding-left: 100px;
+	background: url(images/footer_bck.png) no-repeat 15px center;
+}
+footer a{
+	text-decoration: none;
+	color: #333;
+}
+footer div{
+	font-size: 11px;
+	width: 150px;
+	float: left;
+	color: #333;
+	margin-left: 15px;
+	margin-top: 11px;
+}
+#foot_copyright{
+	width: 150px;
+	color: #711600;
+	float: right;
+	margin-top: 80px;
+	margin-right: 10px;
+}
+#art_main{
+	width: 624px;
+	height: 385px;
+}
+#s_networks{
+	width: 100px;
+	height: 20px;
+	margin-top: 3px;
+	margin-left: 250px;
+	float: left;
+}
+#fb a{
+	width: 20px;
+	height: 20px;
+	margin-top: 4px;
+	float: left;
+	background: url(images/fb.fw.png) no-repeat center center;
+}
+#mail a{
+	width: 20px;
+	height: 20px;
+	margin-top: 4px;
+	float: left;
+	background: url(images/mail.fw.png) no-repeat center center;
+}
+#tw a{
+	width: 20px;
+	height: 20px;
+	margin-top: 4px;
+	float: left;
+	background: url(images/tw.fw.png) no-repeat center center;
+}
+#asideN1{
+	width: 225px;
+	height: 300px;
+	margin-top: 35px;
+	margin-left: 80px;
+	text-align: center;
+	float: left;
+}
+.form{
+	width: 265px;
+	height: 250px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 15px;
+}
+#contactInf{
+	width: 150px;
+	height: 124px;
+	margin-left: 35px;
+	text-align: center;
+}
+#contactInf p{
+	font-size: 0.8em;
+}
+#opinion{
+	width: 180px;
+	height: 170px;
+}
+#portfolio_content{
+	width: 550px;
+	height: 350px;
+	margin-top: 7.5px;
+	margin-left: 43px;
+}
+#title_portfolio{
+	width: 550px;
+	height: 50px;
+	padding-top: 10px;
+}
+#images_portfolio{
+	width: 550px;
+	height: 300px;
+}
+#text_portfolio{
+	width: 200px;
+	height: 125px;
+	float: left;
+	margin-left: 13px;
+}
+.preview a{
+	float: left;
+	margin-left: 13px;
+}

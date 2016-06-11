@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+#anim_landscape{
+	width: 900px;
+	height: 450px;
+	margin: auto;
+	background: url(images/anim_bck/mountains.fw.png) no-repeat bottom center;
+}
+#cloud1{
+	width: 900px;
+	height: 43px;
+	overflow: hidden;
+}
+#sun{
+	width: 900px;
+	height: 61px;
+	overflow: hidden;
+}
+#cloud2{
+	width: 900px;
+	height: 61px;
+	overflow: hidden;
+}
+#cloud3{
+	width: 900px;
+	height: 43px;
+	overflow: hidden;
+}
+@-moz-keyframes rotate {
+	from{
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes rotate {
+	from{
+		-ms-transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes rotate {
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+#sun img{
+	margin-left: 60%;
+	
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 50s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transition-timing-function: linear;
+	
+	-ms-animation-name: rotate;
+	-ms-animation-duration: 50s;
+	-ms-animation-iteration-count: infinite;
+	-ms-transition-timing-function: linear;
+	
+	-moz-animation-name: rotate;
+	-moz-animation-duration: 50s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transition-timing-function: linear;
+}
+@-moz-keyframes translatex {
+	from{
+		-moz-transform: translatex(0px);
+	}
+	to {
+		-moz-transform: translatex(900px);
+	}
+}
+@-ms-keyframes translatex {
+	from{
+		-ms-transform: translatex(0px);
+	}
+	to {
+		-ms-transform: translatex(900px);
+	}
+}
+@-webkit-keyframes translatex {
+	from{
+		-webkit-transform: translatex(0px);
+	}
+	to {
+		-webkit-transform: translatex(900px);
+	}
+}
+#cloud1 img{
+	margin-left: 30%;
+	
+	-webkit-animation-name: translatex;
+	-webkit-animation-duration: 410s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transition-timing-function: linear;
+	
+	-ms-animation-name: translatex;
+	-ms-animation-duration: 410s;
+	-ms-animation-iteration-count: infinite;
+	-ms-transition-timing-function: linear;
+	
+	-moz-animation-name: translatex;
+	-moz-animation-duration: 410s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transition-timing-function: linear;
+}
+#cloud2 img{
+	margin-left: 50%;
+	
+	-webkit-animation-name: translatex;
+	-webkit-animation-duration: 400s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transition-timing-function: linear;
+	
+	-ms-animation-name: translatex;
+	-ms-animation-duration: 400s;
+	-ms-animation-iteration-count: infinite;
+	-ms-transition-timing-function: linear;
+	
+	-moz-animation-name: translatex;
+	-moz-animation-duration: 400s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transition-timing-function: linear;
+}
+#cloud3 img{
+	margin-left: 10%;
+	
+	-webkit-animation-name: translatex;
+	-webkit-animation-duration: 300s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transition-timing-function: linear;
+	
+	-ms-animation-name: translatex;
+	-ms-animation-duration: 300s;
+	-ms-animation-iteration-count: infinite;
+	-ms-transition-timing-function: linear;
+	
+	-moz-animation-name: translatex;
+	-moz-animation-duration: 300s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transition-timing-function: linear;
+}
+#welcome{
+	width: 450px;
+	height: 75px;
+}
+#welcome p{
+	color:#FF6;
+	font-size: 6em;
+	
+	-webkit-animation-name: welc_anim;
+	-webkit-animation-duration: 100s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transition-timing-function: linear;
+	
+	-ms-animation-name: welc_anim;
+	-ms-animation-duration: 100s;
+	-ms-animation-iteration-count: infinite;
+	-ms-transition-timing-function: linear;
+	
+	-moz-animation-name: welc_anim;
+	-moz-animation-duration: 100s;
+	-moz-animation-iteration-count: infinite;
+	-moz-transition-timing-function: linear;
+}
+@-moz-keyframes welc_anim {
+	from{
+		-moz-transform: translatex(0px);
+	}
+	50%{
+		-moz-transform: translatex(80%);
+	}
+	to {
+		-moz-transform: translatex(0px);
+	}
+}
+@-ms-keyframes welc_anim {
+	from{
+		-ms-transform: translatex(0px);
+	}
+	50%{
+		-ms-transform: translatex(80%);
+	}
+	to {
+		-ms-transform: translatex(0px);
+	}
+}
+@-webkit-keyframes welc_anim {
+	from{
+		-webkit-transform: translatex(0px);
+	}
+	50%{
+		-webkit-transform: translatex(80%);
+	}
+	to {
+		-webkit-transform: translatex(0px);
+	}
+}
