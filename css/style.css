@@ -1,0 +1,558 @@
+* {
+  overflow-x: hidden;
+  text-decoration: none !important;
+}
+
+.background-image {
+  position: fixed;
+  background: grey;
+  background: -webkit-linear-gradient(left top, #aaa, #222);
+  background: -o-linear-gradient(bottom right, #aaa, #222);
+  background: -moz-linear-gradient(bottom right, #aaa, #222);
+  background: linear-gradient(to bottom right, #aaa, #222);
+  width: 150%;
+  height: 150%;
+  ;
+  left: -1%;
+}
+
+body {}
+
+.menuImg {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: auto;
+}
+
+.menuTxt:hover {
+  color: #9BE864;
+  transition: 0.35s linear;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.menuTxt:active {
+  color: white;
+  cursor: pointer;
+}
+
+.menuTxt {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  overflow-y: hidden;
+  color: #444;
+  transition: 0.15s linear;
+  letter-spacing: 2px;
+}
+
+.menuMarginTop {
+  margin-top: -4px;
+}
+
+#menu {
+  right: 10px;
+  top: 0px;
+  z-index: 6;
+}
+
+.fbClass:hover {
+  transition: 0.30s linear;
+  filter: sepia(100%) hue-rotate(50deg) saturate(2.2) brightness(218%);
+  z-index: 3;
+}
+
+.fbClass {
+  position: fixed;
+  bottom: 18px;
+  right: 18%;
+  z-index: 3;
+}
+
+.instaClass {
+  position: fixed;
+  bottom: 18px;
+  right: 22.5%;
+  z-index: 3;
+}
+
+.instaClass:hover {
+  transition: 0.30s linear;
+  filter: sepia(100%) hue-rotate(50deg) saturate(2.2) brightness(218%);
+  z-index: 3;
+}
+
+.twitterClass {
+  position: fixed;
+  bottom: 100px;
+  right: 30%;
+  z-index: 3;
+}
+
+.twitterClass:hover {
+  transition: 0.30s linear;
+  filter: sepia(100%) hue-rotate(50deg) saturate(2.2) brightness(218%);
+  z-index: 3;
+}
+
+#footer {
+  position: fixed;
+  bottom: -35px;
+  left: 0px;
+  width: 150%;
+}
+
+#content {
+  background-color: #777;
+}
+
+#homePage {
+  margin-bottom: 30%;
+}
+
+#aboutPage {
+  margin-bottom: 30%;
+}
+
+#worksPage {
+  margin-bottom: 30%;
+}
+
+#blogPage {
+  margin-bottom: 40%;
+}
+
+#contactPage {
+  margin-bottom: 30%;
+}
+
+.logo {
+  transition: 0.30s linear;
+  margin-top: 26%;
+  margin-left: 16%;
+}
+
+.logo:hover {
+  transition: 0.30s linear;
+  filter: brightness(125%);
+}
+
+.hiTxt {
+  transition: 0.30s linear;
+  margin-left: 15%;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: 'ubuntu', sans-serif;
+}
+
+.welcomeTxt {
+  margin-top: -30px;
+  margin-left: 16%;
+  font-size: 25px;
+  color: #9BE864;
+  font-weight: light;
+  font-family: 'quicksand', sans-serif;
+}
+
+#aboutMe {
+  height: 100%;
+}
+
+#whatIDo {
+  height: 100%;
+}
+
+.boxTitle {
+  background-color: #9BE864;
+  height: 75px;
+}
+
+.sep {
+  background-color: #555;
+  height: 20px;
+}
+
+.boxContent {
+  background-color: #ddd;
+}
+
+#meContent {
+  height: 405px;
+}
+
+#aboutMeBox {
+  margin-top: 14vw;
+  margin-bottom: 10px;
+  height: 500px;
+  box-shadow: 0px 0px 10px 5px #656565;
+}
+
+#twoD {
+  height: 245px;
+  margin-top: 14vw;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px 5px #656565;
+}
+
+#threeD {
+  height: 245px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px 5px #656565;
+}
+
+#twoDTitle {
+  margin-top: 0px;
+  background-color: #5D7841;
+}
+
+#twoDContent {
+  height: 150px;
+}
+
+#threeDTitle {
+  margin-top: 0px;
+}
+
+#threeDContent {
+  height: 150px;
+}
+
+.worksCol {
+  height: 100%;
+}
+
+#middleWork {}
+
+.worksBox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 5px #656565;
+}
+
+.firstBox {
+  margin-top: 10vw;
+}
+
+.worksBoxImg {
+  background-color: #ddd;
+  height: 200px;
+}
+
+.worksImg {
+  transition: 0.30s linear;
+  margin: auto;
+  display: block;
+  filter: sepia(100%) hue-rotate(50deg) saturate(1.6) brightness(70%);
+}
+
+.worksImg:hover {
+  transition: 0.30s linear;
+  filter: sepia(0%) hue-rotate(0deg) saturate(1) brightness(100%);
+}
+
+.worksBoxSep {
+  background-color: #444;
+  height: 26px;
+  overflow-y: hidden;
+}
+.worksBoxSep:hover {
+  cursor: pointer;
+}
+
+.worksBoxTxt {
+  background-color: #9BE864;
+  height: 175px;
+  display: none;
+}
+
+.worksBoxSep2 {
+  position: relative;
+  bottom: -13px;
+  background-color: #9BE864;
+  height: 4px;
+}
+.arrow {
+  display: block;
+  margin: auto;
+  position: relative;
+  bottom: -6px;
+}
+
+.blogCol {
+  height: 100%;
+}
+
+.blogBox {
+  margin-top: 10vw;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 5px #656565;
+}
+
+#middleBlog {}
+
+#middleBlogTitle {
+  background-color: #5D7841;
+}
+
+.blogTitle {
+  background-color: #9BE864;
+  height: 75px;
+}
+
+.blogSep {
+  background-color: #444;
+  height: 7.5px;
+}
+
+.blogContent {
+  background-color: #ddd;
+  height: 250px;
+}
+
+.contactCol {
+  height: 100%;
+}
+
+#contactMeCol {
+  height: 100%;
+}
+
+.contactMeBox {
+  box-shadow: 0px 0px 10px 5px #656565;
+  margin-top: 10vw;
+  margin-bottom: 10px;
+}
+
+.contactMeTitle {
+  background-color: #5D7841;
+  height: 75px;
+}
+
+.contactMeSep {
+  background-color: #444;
+  height: 10px;
+}
+
+.contactMeContent {
+  background-color: #ddd;
+  height: 400px;
+}
+
+#artstation {
+  margin-top: 10vw;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 5px #656565;
+}
+
+#sketchfab {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 5px #656565;
+}
+
+#scirra {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 5px #656565;
+}
+
+.linkTitle {
+  background-color: #9BE864;
+  height: 144px;
+}
+
+.linkSep {
+  background-color: #444;
+  height: 10px;
+}
+
+#sketchfabTitle {
+  background-color: #5D7841;
+}
+
+#fccImg {
+  display: block;
+  margin: 15px auto;
+}
+#sketchfabImg {
+  display: block;
+  margin: 15px auto;
+}
+#artstationImg {
+  display: block;
+  margin: 15px auto;
+}
+
+input:focus { 
+    background-color: #9BE864;
+    border: 1px solid #5D7841 !important;
+}
+textarea:focus { 
+    background-color: #9BE864;
+    border: 1px solid #5D7841 !important;
+}
+button:active {
+    border: 1px solid #5D7841 !important;
+}
+
+/* sm!!!!! */
+
+@media screen and (max-width: 991px) {
+  .hiTxt {
+    transition: 0.30s linear;
+    font-size: 60px;
+  }
+  .welcomeTxt {
+    margin-bottom: 20%;
+  }
+  .logo {
+    margin-top: 250px;
+  }
+  .firstBox {
+    margin-top: 5px;
+  }
+}
+
+/* xs!!!!! */
+
+@media screen and (max-width: 767px) {
+  .logo {
+    transition: 1s linear;
+    margin: 210px auto 75%;
+    width: 120px;
+  }
+  .hiTxt {
+    display: none;
+  }
+  .menuTxt {
+    margin: 1% auto;
+    font-size: 15px;
+  }
+  .menuImg {
+    margin: 1% auto;
+  }
+  .welcomeTxt {
+    display: none;
+  }
+  #footer {
+    bottom: -12px;
+  }
+  .footerImage {
+    width: 1000px;
+  }
+  .fbClass {
+    bottom: 19px;
+  }
+  .instaClass {
+    bottom: 19px;
+  }
+ #myResume {
+    margin: 15px 5px !important;
+ } 
+  
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    width: 300px;
+  }
+}
+
+
+/* scrollbar */
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ddd;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: #222;
+}
+
+*::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #9BE864;
+}
+
+/* forms */
+.red {
+    color:red;
+    }
+.form-area {
+	padding: 25px 40px 40px;
+	}
+.form-control {
+  background-color: #ddd;
+  border-radius: 0;
+  -moz-box-shadow: inset 0 0 12px #999;
+  -webkit-box-shadow: inset 0 0 12px #999;
+  box-shadow: inset 0 0 12px #999;
+  border: 1px solid #aaa;
+}
+textarea {
+    resize: none;
+}
+#submit{
+  border-radius: 0;
+  background-color: #5D7841;
+  color: #9BE864;
+}
+
+/* links artstation sketchfab scirra */
+
+.linkTitle{
+  
+}
+
+.linkTitleTxt {
+  color: #5D7841;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'ubuntu', sans-serif;
+}
+#skf {
+  color: #9BE864;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'ubuntu', sans-serif;
+}
+/* tritre, asina class ny titra rehetra */
+.titleDarkGreen {
+  color: #5D7841;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+.titleLightGreen {
+  color: #9BE864;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+.titleMarginTop {
+  margin-top: 20px;
+}
+
+/* text maitsomaitso! */
+.txtDarkGreen {
+  color: #5D7841;
+  padding: 40px 40px;
+  font-family: 'Open sans', sans-serif;
+}
+.txtLightGreen {
+  color: #9BE864;
+  font-family: 'Open sans', sans-serif;
+}
+#myResume {
+  margin: 50px;
+}
+@media screen and (min-width: 991px) {
+  #myResume {
+    margin: 30px;
+  }
+}
