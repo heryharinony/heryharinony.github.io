@@ -1,110 +1,128 @@
-# Stablo - Astro Blog Template with MDX
+# Dark Poole
 
-Stablo Astro is an Astro version of [Stablo - Next.js Blog Template](https://stablo-pro.web3templates.com/), #1 template for Next.js & Sanity CMS. This is an Astro version of the same template.
+![Dark Poole](https://user-images.githubusercontent.com/13270895/89133355-26b3af80-d4e9-11ea-81cd-eacaa9c78320.png)
 
-This free template is sponsored by [Web3Templates](https://web3templates.com)
+Dark Poole is a permanent dark theme of the Poole theme by [@mdo](https://github.com/mdo). I made the theme darker, inspired by [Derek Kedziora's site](https://derekkedziora.com/). Unlike default Poole that utilizes CSS media queries to activate dark mode, the theme will stay dark regardless of the user's preference.
 
-## Live Demo
+- I added a navbar that is easily customizable. Check out [Development](#development) to see how.
+- I also got rid of the "tagline" in the navbar. I think it looks cleaner without it.
+- Finally, I changed the default font size to 20px. I have 20/20 vision and still thought the original font size was too small.
 
-### [https://stablo-astro.web3templates.com/](https://stablo-astro.web3templates.com/)
+That's it! I tried to be least intrusive as possible to the Poole code base.
 
-### [Download Stablo Astro Template](https://web3templates.com/templates/stablo-minimal-blog-website-template)
+**I noticed that Poole's documentation is slightly outdated and misleading. This documentation will try to address most, if not all, of these issues.**
 
-## Deploy on Vercel
+---
 
-Click the below link to deploy this template on Vercel
+## Contents
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=hhttps://github.com/web3templates/stablo-astro&project-name=stablo-astro&repository-name=stablo-astro&demo-title=Stablo%20Astro%20Blog%20Template&demo-description=Stablo%20Astro%20is%20a%20starter%20blog%20template%20for%20Astro%20built%20with%20MDX%20&%20TailwindCSS&demo-url=https%3A%2F%2Fstablo-astro.web3templates.com%2F&demo-image=https://user-images.githubusercontent.com/1884712/169838344-e32b7426-621a-45a4-aba8-afedf3377e1f.jpeg)
+- [Usage](#usage)
+- [Development](#development)
+- [Author](#author)
+- [License](#license)
 
-![Screenshot](https://user-images.githubusercontent.com/1884712/210131622-59ac9ff8-43fe-4a7d-b7fc-8b3b981baa52.png)
+## Usage
 
-## Installation
+### 1. Install dependencies
 
-If you are reading this on github, you can click on the "Use this template" button above to create a new repository from astroship to your account. Then you can do a `git clone` to clone it to your local system.
-
-Alternatively, you can clone the project directly from this repo to your local system.
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/web3templates/stablo-astro.git myProjectName
-# or
-git clone https://github.com/web3templates/stablo-astro.git .
-```
-
-The `.` will clone it to the current directory so make sure you are inside your project folder first.
-
-### 2. Install Dependencies
+Poole is built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem and related dependencies:
 
 ```bash
-npm install
-# or
-yarn install
-# or (recommended)
-pnpm install
+$ gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag
 ```
 
-### 3. Start development Server
+### 2. Install bundler
+
+You must have bundler installed. If you already have bundler installed, please skip this step.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or (recommended)
-pnpm dev
+# Update Rubygems
+$ gem update --system
+# Update bundler
+$ gem install bundler
 ```
 
-### Preview & Build
+### 3. Running locally
+
+To see your Jekyll site with Poole applied, start a Jekyll server. In Terminal, from `/dark-poole` (or whatever your Jekyll site's root directory is named):
 
 ```bash
-npm run build
-npm run preview
-# or
-yarn build
-yarn preview
-# or (recommended)
-pnpm build
-pnpm preview
+$ bundle exec jekyll serve
 ```
 
-We recommend using [pnpm](https://pnpm.io/) to save disk space on your computer.
+Open <http://localhost:4000> in your browser, and voilà.
 
-### Other Commands
+### 4. Serving it up
 
-```bash
-pnpm astro ...
-pnpm astro add
-pnpm astro --help
+If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
+
+1. Fork this repo and switch to the `gh-pages` branch.
+1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
+1. If you're not using a custom domain name, **modify the `url` in `_config.yml`** to point to your GitHub Pages URL. Example: for a site hosted at `username.github.io`, use `http://username.github.io`.
+1. If you want to use your repo name as a base url, **set the `url`** to your repo link and **set the `baseurl`** to your repo name in **`_config.yml`**. Example: for site hosted on `https://username.github.io/dark-poole`, set `url` as `https://username.github.io/dark-poole` and `baseurl` as `/dark-poole`.
+1. Done! Head to your GitHub Pages URL or custom domain.
+
+No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
+
+### 5. Pagination for sites with base urls
+
+If you are using a base url for your site, (for example, hosted on `https://username.github.io/dark-poole`) you have to make some changes to get jekyll-pagination to work correctly:
+
+In `_config.yml`, add this line:
+
+```yaml
+paginate_path: "/baseurl/page:num/"
 ```
 
-## Project Structure
+In `archive.md`, add `{{ site.baseurl }}` before `{{ post.url }}`
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── ...
-├── src/
-│   ├── components/
-│   │   └── ...
-│   ├── layouts/
-│   │   └── ...
-│   └── pages/
-│       └── ...
-└── package.json
+```html
+<!-- Add "{{ site.baseurl }}" -->
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+In `index.html`, remove the `prepend:`:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```html
+<!-- Remove "prepend:" in "prepend: relative_url" -->
+<a
+  class="pagination-item newer"
+  href="{{ paginator.previous_page_path | relative_url }}"
+  >Newer</a
+>
+```
 
-## TailwindCSS
+## Development
 
-TailwindCSS is already configured in this repo, so you can start using them without any installation.
+Poole has two branches, but only one is used for active development.
 
-## 👀 Want to learn more?
+- `master` for development. **All pull requests should be to submitted against `master`.**
+- `gh-pages` for hosted demo **Please avoid using this branch.**
 
-Feel free to check out [Astro Docs](https://docs.astro.build) or jump into our [Discord Chat](https://web3templates.com/discord).
+CSS is handled via Jeykll's built-in Sass compiler. Source Sass files are located in `_sass/`, included into `styles.scss`, and compile to `styles.css`.
 
-[![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
+### Customize Navbar
+
+You can easily customize the navbar by tweaking the `_config.yml` file. Simply change the title and url of each of the nav elements, or add more. The order will be preserved in the site.
+
+```yaml
+nav:
+  - title: Blog
+    url: /archive
+
+  - title: About
+    url: /about
+```
+
+## Author
+
+**Mark Otto**
+
+- <https://github.com/mdo>
+- <https://twitter.com/mdo>
+
+## License
+
+Open sourced under the [MIT license](LICENSE.md).
+
+<3
