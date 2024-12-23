@@ -3,7 +3,7 @@ layout: post
 title: "Learning Resources - testing copy"
 author: "Hery H.A."
 categories: resources
-tags: [documentation,sample]
+tags: [sample]
 image: arctic-2.jpg
 ---
 
