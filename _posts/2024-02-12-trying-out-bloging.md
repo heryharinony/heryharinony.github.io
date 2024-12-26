@@ -2,7 +2,7 @@
 layout: post
 title: "Bruh"
 author: "Hery H.A."
-categories: documentation
+categories: test
 tags: [Test,sample]
 image: cuba-1.jpg
 ---
